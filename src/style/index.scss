@@ -1,0 +1,39 @@
+@mixin display-flex(
+  $align-items,
+  $display,
+  $flex-direction,
+  $justify-content ) {
+
+  align-items: $align-items;
+  display: $display;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+#root {
+  @include display-flex(stretch, flex, row, center);
+  width: 100%;
+}
+
+.app {
+  margin: 2% 0;
+  width: 50rem;
+}
+
+.main-section {
+  margin-top: 2%;
+}

@@ -1,0 +1,159 @@
+@mixin display-grid($display, $grid-template-rows, $grid-template-columns) {
+  display: $display;
+  grid-template-rows: $grid-template-rows;
+  grid-template-columns: $grid-template-columns;
+}
+
+@mixin display-flex(
+  $align-items,
+  $display,
+  $flex-direction,
+  $justify-content ) {
+
+  align-items: $align-items;
+  display: $display;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+}
+
+.show-comment-tool-menu {
+  color: #c7c5c5 !important;
+  display: flex !important;
+  visibility: visible !important;
+}
+
+.comment-wrap {
+  @include display-grid(grid, 100%, 9% 91%);
+  margin: .5rem 0 1rem 0;
+
+  > :first-child {
+    @include display-flex(stretch, flex, row, center);
+  }
+}
+
+.profile-picture-comments {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.comment {
+  @include display-flex(stretch, flex, column, flex-start);
+  border-radius: 10px;
+
+  > :first-child {
+    @include display-flex(stretch, flex, row, flex-start);
+
+    pre {
+      border-radius: 1.5rem;
+      background-color: #eae9e9;
+      display: inline-block;
+      padding: 1rem;
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+
+    pre,
+    span {
+      font-size: 1.3rem;
+    }
+
+    span {
+      color: #104b8e;
+      font-weight: bold;
+      margin-right: .5rem;
+      margin-bottom: .3rem;
+
+      &:hover {
+        box-shadow: 0 1px #104b8e;
+        cursor: pointer;
+      }
+    }
+
+    &:hover {
+      .comment-tool-menu-wrap > :first-child {
+        cursor: pointer;
+        color: #c7c5c5;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.comment-tool-menu-wrap {
+  position: relative;
+
+  >:first-child {
+    font-size: 1.6rem;
+    padding: 1rem;
+    visibility: hidden;
+  }
+
+  >:last-child {
+    @include display-flex(flex-start, none, column, space-between);
+
+    border: .1px solid grey;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 10px lightgrey;
+    font-size: 1.6rem;
+    right: 0;
+    position: absolute;
+    z-index: 50;
+
+    p {
+      @include display-flex(center, flex, row, flex-start);
+
+      color: black;
+      font-size: 1.2rem;
+      padding: .7rem 1rem .7rem .5rem;
+      width: 100%;
+
+      i {
+        color: dimgrey;
+        margin: 0 1rem;
+      }
+
+      &:hover {
+        cursor: pointer;
+        color: white;
+        background-color: #196ecf;
+
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.comment-menu-option {
+  @include display-flex(initial, flex, row, flex-start);
+  padding-left: 1rem;
+
+  p,
+  span {
+    font-size: 1.3rem;
+    margin: .2rem;
+  }
+
+  p {
+    color: #104b8e;
+
+    &:hover {
+      box-shadow: 0 1px #104b8e;
+      cursor: pointer;
+    }
+  }
+
+  span {
+    color: #565555;
+  }
+
+  > :last-child {
+    &:hover {
+      box-shadow: 0 1px grey;
+      cursor: pointer;
+    }
+  }
+}

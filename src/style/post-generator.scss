@@ -1,0 +1,66 @@
+@mixin display-grid($display, $grid-template-rows, $grid-template-columns) {
+  display: $display;
+  grid-template-rows: $grid-template-rows;
+  grid-template-columns: $grid-template-columns;
+}
+
+@mixin display-flex(
+  $align-items,
+  $display,
+  $flex-direction,
+  $justify-content ) {
+
+  align-items: $align-items;
+  display: $display;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+}
+
+.post-generator-wrap {
+  box-shadow: 0 0 3px grey;
+  padding: 1rem;
+}
+
+.insert-post-section {
+  @include display-grid(grid, 100%, 1.5fr 10.5fr);
+  border: none;
+  box-shadow: 0 1px lightgrey;
+  margin: 1% 0 2% 0;
+  padding-bottom: 1.5rem;
+
+  > :first-child {
+    margin: 0 auto;
+  }
+}
+
+.profile-picture {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.text-area-autosize-post {
+  border: none;
+  font-size: 2rem;
+  height: 100%;
+  outline: none;
+  padding: 1rem;
+  resize: none;
+  width: 100%;
+}
+
+.btn-post {
+  background-color: rgba(25,110,207,1);
+  border: none;
+  border-radius: .3rem;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: .5rem;
+  width: 100%;
+
+  &:hover {
+    background-color: rgba(19,91,173,1);
+    cursor: pointer;
+  }
+}
