@@ -1,7 +1,9 @@
 import React from "react";
-import Comments from "./comments";
-import ProfilePicture from "../../profile-picture.jpg";
+
+import ProfilePicture from "../../../assets/profile-picture.jpg";
 import TextareaAutosize from "react-autosize-textarea";
+
+import Comments from "./comments/Comments.js";
 
 class MainWrapComments extends React.Component {
 

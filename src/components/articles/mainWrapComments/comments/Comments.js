@@ -1,6 +1,8 @@
 import React from "react";
-import ProfilePicture from "../../profile-picture.jpg";
-import '../../style/comments.scss';
+
+import ProfilePicture from "../../../../assets/profile-picture.jpg";
+
+import './comments.scss';
 
 class Comments extends React.Component {
 

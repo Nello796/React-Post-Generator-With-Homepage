@@ -1,7 +1,9 @@
 import React from "react";
+
 import TextareaAutosize from 'react-autosize-textarea';
-import ProfilePicture from '../profile-picture.jpg';
-import '../style/post-generator.scss';
+import ProfilePicture from '../../assets/profile-picture.jpg';
+
+import './postGenerator.scss';
 
 class PostGenerator extends React.Component {
 

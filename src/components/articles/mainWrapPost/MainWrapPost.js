@@ -1,5 +1,6 @@
 import React from "react";
-import ProfilePicture from "../../profile-picture.jpg";
+
+import ProfilePicture from "../../../assets/profile-picture.jpg";
 
 class MainWrapPost extends React.Component {
 

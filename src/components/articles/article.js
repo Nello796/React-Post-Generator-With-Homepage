@@ -1,7 +1,9 @@
 import React from "react";
-import MainWrapPost from "./main-wrap-post";
-import MainWrapComments from './main-wrap-comments';
-import '../../style/article.scss';
+
+import MainWrapPost from "./mainWrapPost/MainWrapPost";
+import MainWrapComments from './mainWrapComments/MainWrapComments';
+
+import './article.scss';
 
 const Article = (props) => {
     return (

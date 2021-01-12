@@ -1,35 +1,12 @@
 import React from 'react';
-import PostGenerator from './post-generator';
-import Article from './articles/article';
+
+import PostGenerator from './postGenerator/PostGenerator';
+import Article from './articles/Article';
 
 class App extends React.Component {
 
     state = {
-        postList: [
-            // {
-            //     name: 'Fabion Delishaj',
-            //     postContent: 'post',
-            //     time: 'Undefined',
-            //     like: 0,
-            //     isLiked: false,
-            //     isShareLiked: false,
-            //     comments: [],
-            //     share: 0,
-            //     view: '50k'
-            // }
-
-            // {
-            //     name: 'Fabion Delishaj',
-            //     postContent: 'post',
-            //     time: 'Undefined',
-            //     like: 0,
-            //     isLiked: false,
-            //     isShareLiked: false,
-            //     comments: [],
-            //     share: 0,
-            //     view: '50k'
-            // }
-        ]
+        postList: []
     }
 
     addPost = (post) => {
