@@ -1,7 +1,7 @@
 import React from 'react';
 
 import PostGenerator from './postGenerator/PostGenerator';
-import Article from './articles/Article';
+import Article from './articles/article';
 
 class App extends React.Component {
 
