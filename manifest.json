@@ -1,6 +1,6 @@
 {
-  "short_name": "Facebook Homepage Rappresentation",
-  "name": "Facebook Homepage Rappresentation",
+  "short_name": "React-Post-Generator-With-Homepage",
+  "name": "React-Post-Generator-With-Homepage",
   "icons": [],
   "start_url": ".",
   "display": "standalone",
