@@ -1,5 +1,5 @@
-#You can have a live preview of it by accessing this link [React-Post-Generator-With-Homepage](https://nello796.github.io/React-Post-Generator-With-Homepage).
-#This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can have a live preview of it by accessing this link [React-Post-Generator-With-Homepage](https://nello796.github.io/React-Post-Generator-With-Homepage).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Description
 This is a small personal project that I used to do some training on ReactJs. 
