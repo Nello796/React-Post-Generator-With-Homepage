@@ -4,5 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Description
 This is a small personal project that I used to do some training on ReactJs. 
-This app has only one section where you can create the post, and below the actual posts where you can add comments and like it. 
-Currently, I've stopped working as I'm doing other personal project but I will implement new feature later on as I'm trying to replicate the old Facebook homepage's style.
+<br />
+This app has only one section where you can create the post, and below are the actual posts where you can add comments and like it. 
+<br />
+Currently, I've stopped working on this as I'm working on some other personal projects but I will implement new feature later on as I'm trying to replicate the old Facebook homepage's style.
